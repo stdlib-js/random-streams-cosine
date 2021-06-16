@@ -91,6 +91,7 @@
     "@stdlib/string-replace": "^0.0.x",
     "@stdlib/time-now": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "proxyquire": "^2.0.0",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
   },
