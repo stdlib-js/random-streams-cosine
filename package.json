@@ -58,7 +58,7 @@
     "@stdlib/blas-base-gcopy": "^0.0.x",
     "@stdlib/buffer-from-array": "^0.0.x",
     "@stdlib/buffer-from-string": "^0.0.x",
-    "@stdlib/cli": "^0.0.x",
+    "@stdlib/cli-ctor": "^0.0.x",
     "@stdlib/fs-read-file": "^0.0.x",
     "@stdlib/fs-write-file": "^0.0.x",
     "@stdlib/math-base-assert-is-nan": "^0.0.x",
