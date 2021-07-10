@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-streams-cosine",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create a readable stream for generating pseudorandom numbers drawn from a raised cosine distribution.",
   "license": "Apache-2.0",
   "author": {
