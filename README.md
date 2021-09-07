@@ -543,6 +543,23 @@ $ random-cosine 0.0 1.0 -n 10 --seed 1234
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/random/base/cosine`][@stdlib/random/base/cosine]: raised cosine distributed pseudorandom numbers.
+-   [`@stdlib/random/iter/cosine`][@stdlib/random/iter/cosine]: create an iterator for generating pseudorandom numbers drawn from a raised cosine distribution.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -607,6 +624,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [cosine]: https://en.wikipedia.org/wiki/Raised_cosine_distribution
 
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+
+<!-- <related-links> -->
+
+[@stdlib/random/base/cosine]: https://github.com/stdlib-js/random-base-cosine
+
+[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine
+
+<!-- </related-links> -->
 
 </section>
 
