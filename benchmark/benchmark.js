@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var Readable = require( 'readable-stream' ).Readable;
+var Readable = require( 'vite-compatible-readable-stream' ).Readable;
 var bench = require( '@stdlib/bench' );
 var pkg = require( './../package.json' ).name;
 var randomStream = require( './../lib' );

@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Readable = require( 'readable-stream' ).Readable;
+var Readable = require( 'vite-compatible-readable-stream' ).Readable;
 var now = require( '@stdlib/time-now' );
 var cosine = require( '@stdlib/random-base-cosine' ).factory;
 var isBuffer = require( '@stdlib/assert-is-buffer' );
