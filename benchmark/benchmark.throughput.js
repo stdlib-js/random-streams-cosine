@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var WritableStream = require( 'vite-compatible-readable-stream' ).Writable; // eslint-disable-line stdlib/no-redeclare
+var WritableStream = require( 'readable-stream' ).Writable; // eslint-disable-line stdlib/no-redeclare
 var bench = require( '@stdlib/bench' );
 var inherit = require( '@stdlib/utils-inherit' );
 var nextTick = require( '@stdlib/utils-next-tick' );
