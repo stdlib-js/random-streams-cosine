@@ -74,7 +74,7 @@
     "@stdlib/utils-inherit": "^0.0.x",
     "@stdlib/utils-next-tick": "^0.0.x",
     "debug": "^2.6.9",
-    "readable-stream": "^4.2.0"
+    "vite-compatible-readable-stream": "^3.6.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-browser": "^0.0.x",
