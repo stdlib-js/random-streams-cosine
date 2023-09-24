@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
+import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@v0.1.0-deno/mod.js';
 ```
 
 <a name="random-stream"></a>
@@ -452,7 +452,7 @@ function onState( state ) {
 
 ```javascript
 import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
-import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
+import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@v0.1.0-deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
