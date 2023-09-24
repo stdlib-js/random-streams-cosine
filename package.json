@@ -1,9 +1,36 @@
 {
   "name": "@stdlib/random-streams-cosine",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Create a readable stream for generating pseudorandom numbers drawn from a raised cosine distribution.",
   "license": "Apache-2.0",
-  "main": "./index.js",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "bin": {
+    "random-cosine": "./bin/cli"
+  },
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "test": "make test",
+    "test-cov": "make test-cov",
+    "examples": "make examples",
+    "benchmark": "make benchmark"
+  },
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
@@ -12,6 +39,77 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
+  "dependencies": {
+    "@stdlib/array-uint32": "^0.1.0",
+    "@stdlib/array-uint8": "^0.1.0",
+    "@stdlib/assert-has-own-property": "^0.1.0",
+    "@stdlib/assert-is-boolean": "^0.1.0",
+    "@stdlib/assert-is-error": "^0.1.0",
+    "@stdlib/assert-is-integer": "^0.1.0",
+    "@stdlib/assert-is-nonnegative-integer": "^0.1.0",
+    "@stdlib/assert-is-nonnegative-number": "^0.1.0",
+    "@stdlib/assert-is-number": "^0.1.0",
+    "@stdlib/assert-is-plain-object": "^0.1.0",
+    "@stdlib/assert-is-positive-integer": "^0.1.0",
+    "@stdlib/assert-is-positive-number": "^0.1.0",
+    "@stdlib/assert-is-string": "^0.1.0",
+    "@stdlib/assert-is-uint8array": "^0.1.0",
+    "@stdlib/blas-base-gcopy": "^0.1.0",
+    "@stdlib/buffer-from-array": "^0.1.0",
+    "@stdlib/buffer-from-string": "^0.1.0",
+    "@stdlib/cli-ctor": "^0.1.0",
+    "@stdlib/fs-read-file": "^0.1.0",
+    "@stdlib/fs-write-file": "^0.1.0",
+    "@stdlib/math-base-assert-is-nan": "^0.1.0",
+    "@stdlib/object-assign": "^0.1.0",
+    "@stdlib/process-cwd": "^0.1.0",
+    "@stdlib/random-base-cosine": "^0.1.0",
+    "@stdlib/streams-node-stdout": "^0.1.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.0",
+    "@stdlib/types": "^0.1.0",
+    "@stdlib/utils-define-nonenumerable-property": "^0.1.0",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.0",
+    "@stdlib/utils-define-read-only-accessor": "^0.1.0",
+    "@stdlib/utils-define-read-write-accessor": "^0.1.0",
+    "@stdlib/utils-inherit": "^0.1.0",
+    "@stdlib/utils-next-tick": "^0.1.0",
+    "debug": "^2.6.9",
+    "readable-stream": "^2.1.4"
+  },
+  "devDependencies": {
+    "@stdlib/assert-is-browser": "^0.1.0",
+    "@stdlib/assert-is-buffer": "^0.1.0",
+    "@stdlib/assert-is-uint32array": "^0.1.0",
+    "@stdlib/assert-is-windows": "^0.1.0",
+    "@stdlib/bench": "^0.1.0",
+    "@stdlib/constants-uint32-max": "^0.1.0",
+    "@stdlib/fs-exists": "^0.1.0",
+    "@stdlib/fs-unlink": "^0.1.0",
+    "@stdlib/process-exec-path": "^0.1.0",
+    "@stdlib/random-base-minstd": "^0.0.6",
+    "@stdlib/streams-node-inspect-sink": "^0.1.0",
+    "@stdlib/string-replace": "^0.1.0",
+    "@stdlib/time-now": "^0.1.0",
+    "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
+    "proxyquire": "^2.0.0",
+    "istanbul": "^0.4.1",
+    "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
   "keywords": [
     "stdlib",
     "stdmath",
