@@ -18,26 +18,48 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # Raised Cosine Random Numbers
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a [raised cosine][cosine] distribution.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-streams-cosine
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
+var randomStream = require( '@stdlib/random-streams-cosine' );
 ```
 
 <a name="random-stream"></a>
@@ -47,7 +69,7 @@ import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/rando
 Returns a [readable stream][readable-stream] for generating pseudorandom numbers drawn from a [raised cosine][cosine] distribution with parameters `mu` (location) and `s` (scale).
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 var iStream;
 var stream;
@@ -93,7 +115,7 @@ var stream = randomStream( 0.0, 2.0, opts );
 By default, the function returns a [stream][stream] which can generate an infinite number of values (i.e., the [stream][stream] will **never** end). To limit the number of generated pseudorandom numbers, set the `iter` option.
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -112,7 +134,7 @@ stream.pipe( iStream );
 By default, when not operating in [objectMode][object-mode], a returned [stream][stream] delineates generated pseudorandom numbers using a newline character. To specify an alternative separator, set the `sep` option.
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -132,7 +154,7 @@ stream.pipe( iStream );
 To seed the underlying pseudorandom number generator, set the `seed` option.
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 function log( v ) {
     console.log( v );
@@ -157,7 +179,7 @@ stream.pipe( iStream );
 To return a [readable stream][readable-stream] with an underlying pseudorandom number generator having a specific initial state, set the `state` option.
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 function log( v ) {
     console.log( v );
@@ -217,7 +239,7 @@ var seed = stream.seed;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream( 2.0, 2.0, {
     'prng': minstd
@@ -241,7 +263,7 @@ var len = stream.seedLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream( 2.0, 2.0, {
     'prng': minstd
@@ -265,7 +287,7 @@ var state = stream.state;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream( 2.0, 2.0, {
     'prng': minstd
@@ -289,7 +311,7 @@ var len = stream.stateLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream( 2.0, 2.0, {
     'prng': minstd
@@ -313,7 +335,7 @@ var sz = stream.byteLength;
 If provided a PRNG for uniformly distributed numbers, this value is `null`.
 
 ```javascript
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
 
 var stream = randomStream( 2.0, 2.0, {
     'prng': minstd
@@ -368,7 +390,7 @@ The method accepts the same `options` as [`randomStream()`](#random-stream).
 This method is a convenience function to create [streams][stream] which **always** operate in [objectMode][object-mode].
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
 
 function log( v ) {
     console.log( v );
@@ -440,8 +462,8 @@ function onState( state ) {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
-import randomStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-streams-cosine@deno/mod.js';
+var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+var randomStream = require( '@stdlib/random-streams-cosine' );
 
 function log( v ) {
     console.log( v.toString() );
@@ -468,7 +490,80 @@ stream.pipe( iStream );
 
 <!-- Section for describing a command-line interface. -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/random-streams-cosine-cli
+```
+
+</section>
+<!-- CLI usage documentation. -->
+
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: random-cosine [options] <mu> <s>
+
+Options:
+
+  -h,  --help               Print this message.
+  -V,  --version            Print the package version.
+       --sep sep            Separator used to join streamed data. Default: '\n'.
+  -n,  --iter iterations    Number of pseudorandom numbers.
+       --seed seed          Pseudorandom number generator seed.
+       --state filepath     Path to a file containing the pseudorandom number
+                            generator state.
+       --snapshot filepath  Output file path for saving the pseudorandom number
+                            generator state upon exit.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+### Notes
+
+-   In accordance with POSIX convention, a trailing newline is **always** appended to generated output prior to exit.
+-   Specifying a "snapshot" file path is useful when wanting to resume pseudorandom number generation due to, e.g., a downstream failure in an analysis pipeline. Before exiting, the process will store the pseudorandom number generator state in a file specified according to a provided file path. Upon loading a snapshot (state), the process will generate pseudorandom numbers starting from the loaded state, thus avoiding having to seed and replay an entire analysis.
+
+</section>
+
+<!-- /.notes -->
+
+<!-- CLI usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ random-cosine 0.0 1.0 -n 10 --seed 1234
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -494,7 +589,7 @@ stream.pipe( iStream );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -524,8 +619,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-streams-cosine.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-streams-cosine
 
-[test-image]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-streams-cosine/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-streams-cosine?branch=main
@@ -566,13 +661,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [cosine]: https://en.wikipedia.org/wiki/Raised_cosine_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/cosine]: https://github.com/stdlib-js/random-base-cosine/tree/deno
+[@stdlib/random/base/cosine]: https://github.com/stdlib-js/random-base-cosine
 
-[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine/tree/deno
+[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine
 
 <!-- </related-links> -->
 
