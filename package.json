@@ -86,7 +86,7 @@
     "@stdlib/fs-exists": "^0.1.0",
     "@stdlib/fs-unlink": "^0.1.0",
     "@stdlib/process-exec-path": "^0.1.0",
-    "@stdlib/random-base-minstd": "^0.0.6",
+    "@stdlib/random-base-minstd": "^0.1.0",
     "@stdlib/streams-node-inspect-sink": "^0.1.0",
     "@stdlib/string-replace": "^0.1.0",
     "@stdlib/time-now": "^0.1.0",
