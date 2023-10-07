@@ -35,7 +35,7 @@ var isUint8Array = require( '@stdlib/assert-is-uint8array' );
 var isInteger = require( '@stdlib/assert-is-integer' ).isPrimitive;
 var gcopy = require( '@stdlib/blas-base-gcopy' );
 var array2buffer = require( '@stdlib/buffer-from-array' );
-var randomStream = require( './../lib' );
+var randomStream = require( '@stdlib/random-streams-cosine' );
 
 
 // FUNCTIONS //
