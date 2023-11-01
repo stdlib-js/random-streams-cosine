@@ -40,8 +40,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/array-uint32": "^0.1.0",
-    "@stdlib/array-uint8": "^0.1.0",
+    "@stdlib/array-uint32": "^0.1.1",
+    "@stdlib/array-uint8": "^0.1.1",
     "@stdlib/assert-has-own-property": "^0.1.1",
     "@stdlib/assert-is-boolean": "^0.1.1",
     "@stdlib/assert-is-error": "^0.1.1",
