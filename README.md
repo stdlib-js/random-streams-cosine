@@ -45,12 +45,14 @@ npm install @stdlib/random-streams-cosine
 
 Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
 -   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
 The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
 
 </section>
 
@@ -619,8 +621,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-streams-cosine.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-streams-cosine
 
-[test-image]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/random-streams-cosine/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-streams-cosine/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-streams-cosine?branch=main
@@ -647,8 +649,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/random-streams-cosine/tree/deno
+[deno-readme]: https://github.com/stdlib-js/random-streams-cosine/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/random-streams-cosine/tree/umd
+[umd-readme]: https://github.com/stdlib-js/random-streams-cosine/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/random-streams-cosine/tree/esm
+[esm-readme]: https://github.com/stdlib-js/random-streams-cosine/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/random-streams-cosine/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-streams-cosine/main/LICENSE
