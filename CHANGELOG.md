@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-13)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`75a9f4d`](https://github.com/stdlib-js/stdlib/commit/75a9f4dfad0a296d9d57a475e683cf023d977151) - **bench:** refactor to use string interpolation in `@stdlib/random-streams` [(#11422)](https://github.com/stdlib-js/stdlib/pull/11422) _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2026-02-08)
